@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en" ng-app="myApp">
+  <head lang="en">
+    <meta charset="utf-8">
+    <base href="/index.html">
+    <meta name="description" content="Healthy Planet Partners - Sustainable Power Finance">
+    <meta name="author" content="Healthy Planet Partners">
+    <meta name="keywords" content="Solar, Finance, Environment">
+    <title>Healthy Planet Partners</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css"/>
+
+  </head>
+
+  <body>
+    <div id="page">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="/">
+              <img style="margin: -3px 10px 0px 0px;" src="/img/logo.png" alt=""> Healthy Planet Partners
+            </a>
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li><a href="#/?scrollTo=page">Home</a></li>
+                <li><a href="#/?scrollTo=about">About</a></li>
+                <li><a href="#/?scrollTo=products">Products</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li class="nav-header">Nav header</li>
+                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#/?scrollTo=contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div ng-view></div>
+      <hr>
+      <!-- FOOTER -->
+      <footer>
+          <div class="container">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; Healthy Planet Partners Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          </div>
+      </footer>
+    </div><!-- /page -->
+  </body>
+</html>

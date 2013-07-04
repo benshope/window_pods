@@ -1,3 +1,3 @@
-# Healthy Planet Partners
+# Allan Shope Architect
 
-Renewable technology finance company website.
+Company website.

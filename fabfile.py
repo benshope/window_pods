@@ -10,6 +10,6 @@ def save(m="Fab-update the app"):
     local("git commit -a -m '{0}'".format(m))
     local("git push")
 
-def update(app_id="healthy-planet", version="2-2"):
+def update(app_id="shope-architect", version="2-2"):
     """ upload the app """
     local("appcfg.py --oauth2 update .")

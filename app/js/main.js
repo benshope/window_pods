@@ -487,10 +487,10 @@ $(document).ready(function(){
 	// Call placeholder.js to enable Placeholder Property for IE9
 	Modernizr.load([
 	{
-		test: Modernizr.input.placeholder,
+		test: Modernizr.placeholder,
 		nope: '_include/js/placeholder.js', 
 		complete : function() {
-				if (!Modernizr.input.placeholder) {
+				if (!Modernizr.placeholder) {
 						Placeholders.init({
 						live: true,
 						hideOnFocus: false,

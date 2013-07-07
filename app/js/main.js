@@ -463,7 +463,7 @@ CHAKRA.map = function(){
 			map.mapTypes.set('map_style', styledMap);
   			map.setMapTypeId('map_style');
 
-			var contentString = '<p><strong>Company Name</strong><br>Address here</p>';
+			var contentString = '<p class="no-margin"><strong>Allan Shope Architect</strong><br>78 Sinpatch Road<br>Wassaic, NY 12592</p>';
 
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString

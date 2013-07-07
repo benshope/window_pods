@@ -17,6 +17,10 @@ Version: 1.0
 /*@font-face {font-family: 'Novecentowide-Medium';src: url('fonts/279E71_5_0.eot');src: url('fonts/279E71_5_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_5_0.woff') format('woff'),url('fonts/279E71_5_0.ttf') format('truetype');}*/
 
 #menu-nav {font-family: 'Novecentowide-Normal', 'Open Sans', sans-serif;}
+.no-margin {margin:0px;}
+.sticky-wrapper {height:0px !important;}
+
+
 /* ==================================================
    Basic Styles
 ================================================== */
@@ -38,7 +42,7 @@ body{
 	font-weight:300;
 	font-size:16px;
 	font-family: 'Open Sans', sans-serif;
-	line-height:28px;
+	line-height:40px;
 }
 
 

@@ -8,6 +8,15 @@ Version: 1.0
 */
 
 
+
+/*@font-face {font-family: 'Novecentowide-Bold';src: url('fonts/279E71_0_0.eot');src: url('fonts/279E71_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_0_0.woff') format('woff'),url('fonts/279E71_0_0.ttf') format('truetype');}*/
+/*@font-face {font-family: 'Novecentowide-Light';src: url('fonts/279E71_1_0.eot');src: url('fonts/279E71_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_1_0.woff') format('woff'),url('fonts/279E71_1_0.ttf') format('truetype');}*/
+@font-face {font-family: 'Novecentowide-DemiBold';src: url('fonts/279E71_2_0.eot');src: url('fonts/279E71_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_2_0.woff') format('woff'),url('fonts/279E71_2_0.ttf') format('truetype');}
+/*@font-face {font-family: 'Novecentowide-Book';src: url('fonts/279E71_3_0.eot');src: url('fonts/279E71_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_3_0.woff') format('woff'),url('fonts/279E71_3_0.ttf') format('truetype');}*/
+@font-face {font-family: 'Novecentowide-Normal';src: url('fonts/279E71_4_0.eot');src: url('fonts/279E71_4_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_4_0.woff') format('woff'),url('fonts/279E71_4_0.ttf') format('truetype');}
+/*@font-face {font-family: 'Novecentowide-Medium';src: url('fonts/279E71_5_0.eot');src: url('fonts/279E71_5_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_5_0.woff') format('woff'),url('fonts/279E71_5_0.ttf') format('truetype');}*/
+
+#menu-nav {font-family: 'Novecentowide-Normal', 'Open Sans', sans-serif;}
 /* ==================================================
    Basic Styles
 ================================================== */
@@ -213,7 +222,7 @@ h6{
 	margin:0 0 20px 0;
 	color:#4C4F55;
 	font-weight:300;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Novecentowide-DemiBold', 'Open Sans', sans-serif;
 	line-height:1.5em;
 }
 
@@ -531,7 +540,7 @@ header #logo {
 
 header #logo a {
 	background: url(../img/logo.png) no-repeat;
-	width: 96px;
+	width: 210px;
 	height: 30px;
 	text-indent: -9999px;
 	display: block;

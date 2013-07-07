@@ -41,6 +41,17 @@
 <script src="js/modernizr.js"></script>
 </head>
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'YOUR ID']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 <body>
 
@@ -176,11 +187,10 @@
   </div>
 </div>
 
-<!-- Google Map -->
+
 <div id="map-area">
     <div class="map" id="map_1" data-mapLat="51.911475" data-mapLon="-1.461815" data-mapZoom="11" data-mapTitle="Your Title"></div>
 </div>
-<!-- End Google Map -->
 
 <div id="contact" class="page">
   <div class="container">
@@ -246,10 +256,8 @@
 <script src="js/jquery.isotope.js"></script> <!-- Isotope Filter -->
 <script src="js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
 <script src="js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
 
 </body>
 </html>

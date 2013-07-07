@@ -207,7 +207,7 @@ CHAKRA.contactForm = function(){
 
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -452,7 +452,7 @@ CHAKRA.map = function(){
 
 			var map = new google.maps.Map(document.getElementById($map_id), options);
 
-			var image = '_include/img/marker.png';
+			var image = 'img/marker.png';
 			var marker = new google.maps.Marker({
 				position: latlng,
 				map: map,
@@ -488,7 +488,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js',
+		nope: 'js/placeholder.js',
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({

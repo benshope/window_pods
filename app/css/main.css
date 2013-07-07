@@ -1200,7 +1200,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #comment-form .submit:hover {
-    background: #FF7B3A;
+    background: #C0C0C0;
 	color: #FFFFFF;
 }
 
@@ -1325,6 +1325,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
+	border-radius:6px;
     background: #E0E0E0;
     color: #55606A;
     cursor: pointer;
@@ -1344,7 +1345,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit:hover {
-    background: #FF7B3A;
+    background: #C0C0C0;
 	color: #FFFFFF;
 }
 

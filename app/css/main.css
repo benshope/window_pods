@@ -328,8 +328,8 @@ h3.spec {
 	width: 100%;
 	height: 100%;
 	background: #26292E;
-	opacity: 0.2;
-	filter: alpha(opacity=20);
+	opacity: 0.0;
+	filter: alpha(opacity=0);
 	z-index: 0;
 }
 

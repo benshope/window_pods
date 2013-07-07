@@ -34,7 +34,7 @@ body{
 
 
 a{
-	color:#8AC007;
+	color:#C0C0C0;
 	text-decoration: none;
 	cursor: pointer;
 
@@ -112,7 +112,7 @@ li {
 }
 
 .color-text {
-    color: #8AC007;
+    color: #C0C0C0;
 }
 
 .through{
@@ -401,7 +401,7 @@ h3.spec {
 
 #home-slider #nextslide:hover,
 #home-slider #prevslide:hover {
-	background-color:#8AC007;
+	background-color:#C0C0C0;
 }
 
 #home-slider #nextslide i,
@@ -454,12 +454,12 @@ h3.spec {
 }
 
 #home-slider ul#slide-list li a:hover {
-	background-color: #8AC007;
+	background-color: #C0C0C0;
 }
 
 #home-slider ul#slide-list li.current-slide a,
 #home-slider ul#slide-list li.current-slide a:hover {
-	background-color:#8AC007;
+	background-color:#C0C0C0;
 }
 
 #home-slider #nextsection {
@@ -477,7 +477,7 @@ h3.spec {
 }
 
 #home-slider #nextsection:hover {
-	background-color:#8AC007;
+	background-color:#C0C0C0;
 }
 
 #home-slider #nextsection i {
@@ -720,11 +720,11 @@ nav#menu #menu-nav li a:hover {
 }
 
 .work-nav #filters li a:hover {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 .work-nav #filters li a.selected {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 #thumbs {
@@ -772,7 +772,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #8AC007;
+	background: #C0C0C0;
 
 	opacity: 0.45;
 	filter: alpha(opacity=45);
@@ -840,7 +840,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #8AC007;
+	background: #C0C0C0;
 
 	opacity: 0.45;
 	filter: alpha(opacity=45);
@@ -914,7 +914,7 @@ nav#menu #menu-nav li a:hover {
 
 .big-quote span {
 	font-size: 32px;
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 /* ==================================================
@@ -926,7 +926,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .services-box .icon {
-	background: #8AC007;
+	background: #C0C0C0;
     display: inline-block;
     height: 160px;
     position: relative;
@@ -997,7 +997,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .entry-title a:hover {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 .entry-meta,
@@ -1009,7 +1009,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .entry-meta a:hover {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 .entry-meta {
@@ -1083,7 +1083,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .comment-author cite a:hover {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 .comment-meta {
@@ -1100,7 +1100,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .comment-meta a:hover {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 .comment-body {
@@ -1242,7 +1242,7 @@ nav#menu #menu-nav li a:hover {
 .navigation .next:hover,
 .navigation .number:hover,
 .navigation .current {
-	background-color:#8AC007;
+	background-color:#C0C0C0;
 }
 
 
@@ -1385,7 +1385,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #ticker .tweet_list .tweet_time a:hover {
-	color: #8AC007;
+	color: #C0C0C0;
 }
 
 
@@ -1456,7 +1456,7 @@ nav#menu #menu-nav li a:hover {
 
 #social ul li:hover a,
 #social ul li.active a {
-	background-color: #8AC007;
+	background-color: #C0C0C0;
 
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
@@ -1521,7 +1521,7 @@ footer .credits {
 }
 
 #back-to-top:hover {
-	background-color:#8AC007;
+	background-color:#C0C0C0;
 }
 
 #back-to-top i {
@@ -1597,7 +1597,7 @@ footer .credits {
 	margin: -50px 0 0 -50px;
 	width: 100px;
 	height: 100px;
-	background: #8AC007;
+	background: #C0C0C0;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	border-radius: 999px;

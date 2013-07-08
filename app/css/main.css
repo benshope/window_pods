@@ -19,6 +19,7 @@ Version: 1.0
 #menu-nav {font-family: 'Novecentowide-Normal', 'Open Sans', sans-serif;}
 .no-margin {margin:0px;}
 .sticky-wrapper {height:0px !important;}
+.submit {font-family: 'Novecentowide-DemiBold', 'Open Sans', sans-serif;}
 
 
 /* ==================================================
@@ -42,14 +43,15 @@ body{
 	font-weight:300;
 	font-size:16px;
 	font-family: 'Open Sans', sans-serif;
-	line-height:40px;
+	line-height:35px;
 }
 
 
 a{
-	color:#C0C0C0;
+	color:#808080;
 	text-decoration: none;
 	cursor: pointer;
+	font-weight:400;
 
 	-webkit-transition: color 0.1s linear 0s;
 	   -moz-transition: color 0.1s linear 0s;

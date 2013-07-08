@@ -456,10 +456,6 @@ h3.spec {
 	width: 12px;
 	height: 12px;
 
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	border-radius: 999px;
-
 	-webkit-transition: background 0.1s linear 0s;
 	   -moz-transition: background 0.1s linear 0s;
 		 -o-transition: background 0.1s linear 0s;
@@ -1595,12 +1591,6 @@ footer .credits {
 
 	font-size: 24px;
 	color: #FFFFFF;
-
-	-webkit-animation: circle 1s infinite forwards;
-	   -moz-animation: circle 1s infinite forwards;
-		-ms-animation: circle 1s infinite forwards;
-		 -o-animation: circle 1s infinite forwards;
-			animation: circle 1s infinite forwards;
 }
 
 #circle {
@@ -1612,74 +1602,9 @@ footer .credits {
 	width: 100px;
 	height: 100px;
 	background: #C0C0C0;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	border-radius: 999px;
-
-	-webkit-animation: circle 1s infinite forwards;
-	   -moz-animation: circle 1s infinite forwards;
-		-ms-animation: circle 1s infinite forwards;
-			animation: circle 1s infinite forwards;
 }
 
-@-webkit-keyframes circle {
-	0% {-webkit-transform: rotateY(0deg);
-		-webkit-animation-timing-function: ease-in;
-	}
-	50% {-webkit-transform: rotateY(180deg);
-		-webkit-animation-timing-function: ease-out;
-	}
-	100% {-webkit-transform: rotateY(0deg);
-		-webkit-animation-timing-function: ease-in;
-	}
-}
 
-@-moz-keyframes circle {
-	0% {-moz-transform: rotateY(0deg);
-	}
-	50% {-moz-transform: rotateY(180deg);
-		-moz-animation-timing-function: ease-out;
-	}
-	100% {-moz-transform: rotateY(0deg);
-		-moz-animation-timing-function: ease-in;
-	}
-}
-
-@-ms-keyframes circle {
-	0% {-ms-transform: rotateY(0deg);
-		-ms-animation-timing-function: ease-in;
-	}
-	50% {-ms-transform: rotateY(180deg);
-		-ms-animation-timing-function: ease-out;
-	}
-	100% {-ms-transform: rotateY(0deg);
-		-ms-animation-timing-function: ease-in;
-	}
-}
-
-@-o-keyframes circle {
-	0% {-o-transform: rotateY(0deg);
-		-o-animation-timing-function: ease-in;
-	}
-	50% {-o-transform: rotateY(180deg);
-		-o-animation-timing-function: ease-out;
-	}
-	100% {-o-transform: rotateY(0deg);
-		-o-animation-timing-function: ease-in;
-	}
-}
-
-@keyframes circle {
-	0% {transform: rotateY(0deg);
-		animation-timing-function: ease-in;
-	}
-	50% {transform: rotateY(180deg);
-		animation-timing-function: ease-out;
-	}
-	100% {transform: rotateY(0deg);
-		animation-timing-function: ease-in;
-	}
-}
 
 
 /* ==================================================

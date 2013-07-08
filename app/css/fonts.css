@@ -658,7 +658,7 @@ you can use the generic selector below, but it's slower:
 	content: "\e0c7";
 }
 .font-icon-blockquote:before {
-	content: "\e0c8";
+	/*content: "\e0c8";*/
 }
 .font-icon-bell:before {
 	content: "\e0c9";

@@ -523,14 +523,15 @@ header .sticky-nav {
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-}
 
-header .sticky-nav.stuck {
+
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1001;
 }
+
+
 
 header #logo {
 	float: left;
@@ -922,7 +923,6 @@ nav#menu #menu-nav li a:hover {
 }
 
 .big-quote span {
-	font-size: 32px;
 	color: #C0C0C0;
 }
 

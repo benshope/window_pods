@@ -20,7 +20,7 @@ Version: 1.0
 .no-margin {margin:0px;}
 .sticky-wrapper {height:0px !important;}
 .submit {font-family: 'Novecentowide-DemiBold', 'Open Sans', sans-serif;}
-
+#contact {	padding: 100px 0;}
 
 /* ==================================================
    Basic Styles
@@ -669,14 +669,14 @@ nav#menu #menu-nav li a:hover {
 
 .page {
 	background: #F5F6F6;
-	padding: 100px 0;
+	padding: 100px 0 400px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .page-alternate {
 	background: #FFFFFF;
-	padding: 100px 0;
+	padding: 100px 0 400px 0;
 	position: relative;
 	z-index: 99;
 }

@@ -18,3 +18,9 @@ handlers:
 - url: (.*)
   static_files: app\1
   upload: app
+
+libraries:
+- name: jinja2
+  version: "2.6"
+- name: webapp2
+  version: "2.5.2"

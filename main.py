@@ -7,9 +7,14 @@ jinja = jinja2.Environment(
 
 class HomePage(webapp2.RequestHandler):
     def get(self):
-        template = jinja.get_template('home.html')
-        self.response.write(template.render({}))
+        template_values = {
 
-application = webapp2.WSGIApplication([
+        }
+        template = jinja.get_template('test.html')
+        self.response.write(template.render(template_values))
+        # self.response.headers['Content-Type'] = 'text/plain'
+        # self.response.out.write('Jinja Is Working')
+
+app = webapp2.WSGIApplication([
     ('/', HomePage)
 ], debug=True)

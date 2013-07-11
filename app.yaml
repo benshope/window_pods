@@ -11,16 +11,20 @@ skip_files:
 - ^fabfile\.py
 
 handlers:
-- url: (.*)/
-  static_files: app\1/index.html
-  upload: app
-
-- url: (.*)
-  static_files: app\1
-  upload: app
+- url: /favicon\.ico
+  static_files: static/img/favicon.ico
+  upload: static/img/favicon.ico
+- url: /img
+  static_dir: static/img
+- url: /css
+  static_dir: static/css
+- url: /js
+  static_dir: static/js
+- url: /.*
+  script: main.application
 
 libraries:
-- name: jinja2
-  version: "2.6"
 - name: webapp2
-  version: "2.5.2"
+  version: latest
+- name: jinja2
+  version: latest

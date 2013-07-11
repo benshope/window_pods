@@ -11,15 +11,14 @@ skip_files:
 - ^fabfile\.py
 
 handlers:
-- url: /favicon\.ico
-  static_files: static/img/favicon.ico
-  upload: static/img/favicon.ico
-- url: /img
-  static_dir: static/img
+- url: /html
+  static_dir: html
 - url: /css
-  static_dir: static/css
+  static_dir: css
 - url: /js
-  static_dir: static/js
+  static_dir: js
+- url: /img
+  static_dir: img
 - url: /.*
   script: main.application
 

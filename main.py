@@ -10,9 +10,9 @@ class Home(webapp2.RequestHandler):
         template = jinja.get_template('home.html')
         self.response.write(template.render({}))
 
-class Blog(webapp2.RequestHandler):
+class News(webapp2.RequestHandler):
     def get(self):
-        template = jinja.get_template('blog.html')
+        template = jinja.get_template('news.html')
         self.response.write(template.render({}))
 
 class Post(webapp2.RequestHandler):
@@ -21,7 +21,7 @@ class Post(webapp2.RequestHandler):
         self.response.write(template.render({}))
 
 app = webapp2.WSGIApplication([
-    ('/', Home),
-    ('/blog', Blog),
-    ('/post', Post)
+    ('/', Home,  _fragment='contact'),
+    ('/news', News),
+    ('/news/(\d+)', Post)
 ], debug=True)

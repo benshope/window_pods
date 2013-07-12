@@ -11,8 +11,8 @@ skip_files:
 - ^fabfile\.py
 
 handlers:
-- url: /html
-  static_dir: html
+# - url: /html
+#   static_dir: html
 - url: /css
   static_dir: css
 - url: /js

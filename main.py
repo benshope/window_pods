@@ -10,7 +10,7 @@ class HomePage(webapp2.RequestHandler):
         template_values = {
 
         }
-        template = jinja.get_template('test.html')
+        template = jinja.get_template('home.html')
         self.response.write(template.render(template_values))
         # self.response.headers['Content-Type'] = 'text/plain'
         # self.response.out.write('Jinja Is Working')

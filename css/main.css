@@ -8,7 +8,6 @@ Version: 1.0
 */
 
 
-
 /*@font-face {font-family: 'Novecentowide-Bold';src: url('fonts/279E71_0_0.eot');src: url('fonts/279E71_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_0_0.woff') format('woff'),url('fonts/279E71_0_0.ttf') format('truetype');}*/
 /*@font-face {font-family: 'Novecentowide-Light';src: url('fonts/279E71_1_0.eot');src: url('fonts/279E71_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_1_0.woff') format('woff'),url('fonts/279E71_1_0.ttf') format('truetype');}*/
 @font-face {font-family: 'Novecentowide-DemiBold';src: url('fonts/279E71_2_0.eot');src: url('fonts/279E71_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/279E71_2_0.woff') format('woff'),url('fonts/279E71_2_0.ttf') format('truetype');}
@@ -21,6 +20,8 @@ Version: 1.0
 .sticky-wrapper {height:0px !important;}
 .submit {font-family: 'Novecentowide-DemiBold', 'Open Sans', sans-serif;}
 #contact {	padding: 100px 0;}
+
+
 
 /* ==================================================
    Basic Styles
@@ -669,14 +670,14 @@ nav#menu #menu-nav li a:hover {
 
 .page {
 	background: #F5F6F6;
-	padding: 100px 0 400px 0;
+	padding: 100px 0 100px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .page-alternate {
 	background: #FFFFFF;
-	padding: 100px 0 400px 0;
+	padding: 100px 0 100px 0;
 	position: relative;
 	z-index: 99;
 }

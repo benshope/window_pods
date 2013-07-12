@@ -5,16 +5,23 @@ import os
 jinja = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__) + "/html"))
 
-class HomePage(webapp2.RequestHandler):
+class Home(webapp2.RequestHandler):
     def get(self):
-        template_values = {
-
-        }
         template = jinja.get_template('home.html')
-        self.response.write(template.render(template_values))
-        # self.response.headers['Content-Type'] = 'text/plain'
-        # self.response.out.write('Jinja Is Working')
+        self.response.write(template.render({}))
+
+class Blog(webapp2.RequestHandler):
+    def get(self):
+        template = jinja.get_template('blog.html')
+        self.response.write(template.render({}))
+
+class Post(webapp2.RequestHandler):
+    def get(self):
+        template = jinja.get_template('post.html')
+        self.response.write(template.render({}))
 
 app = webapp2.WSGIApplication([
-    ('/', HomePage)
+    ('/', Home),
+    ('/blog', Blog),
+    ('/post', Post)
 ], debug=True)

@@ -41,7 +41,6 @@ CHAKRA.listenerMenu = function(){
 	});
 }
 
-
 /* ==================================================
    Slider Options
 ================================================== */
@@ -475,10 +474,10 @@ $(document).ready(function(){
 	CHAKRA.toolTip();
 	CHAKRA.map();
 	CHAKRA.pageHeight();
-});
+	});
 
-$(window).resize(function(){
-	CHAKRA.mobileNav();
-});
+	$(window).resize(function(){
+		CHAKRA.mobileNav();
+	});
 
 });

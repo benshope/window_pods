@@ -423,15 +423,9 @@ CHAKRA.map = function(){
    PageHeight
 ================================================== */
 
-// CHAKRA.pageHeight = function() {
-//     if ($('.stretch').length > 0)
-// 	{
-// 		$('.stretch').each(
-// 			function(index,element){$('.element').css({'height':($(window).height())+'px'});
-//     	)};
-//     }
-// }
-
+CHAKRA.pageHeight = function() {
+	$('.stretch').height($(window).height());
+}
 
 /* ==================================================
 	Init

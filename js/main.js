@@ -195,65 +195,6 @@ CHAKRA.fancyBox = function(){
 }
 
 
-/* ==================================================
-   Contact Form
-================================================== */
-
-CHAKRA.contactForm = function(){
-	$("#contact-submit").on('click',function() {
-		$contact_form = $('#contact-form');
-
-		var fields = $contact_form.serialize();
-
-		$.ajax({
-			type: "POST",
-			url: "php/contact.php",
-			data: fields,
-			dataType: 'json',
-			success: function(response) {
-
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
-				}
-
-				$('#response').empty().html(response.html);
-			}
-		});
-		return false;
-	});
-}
-
-
-/* ==================================================
-   Twitter Feed
-================================================== */
-
-CHAKRA.tweetFeed = function(){
-	var valueTop = -64; // Margin Top Value
-
-    $("#ticker").tweet({
-          username: "Bluxart", // Change this with YOUR ID
-          page: 1,
-          avatar_size: 0,
-          count: 10,
-		  template: "{text}{time}",
-		  filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); },
-          loading_text: "loading ..."
-	}).bind("loaded", function() {
-	  var ul = $(this).find(".tweet_list");
-	  var ticker = function() {
-		setTimeout(function() {
-			ul.find('li:first').animate( {marginTop: valueTop + 'px'}, 500, 'linear', function() {
-				$(this).detach().appendTo(ul).removeAttr('style');
-			});
-		  ticker();
-		}, 5000);
-	  };
-	  ticker();
-	});
-
-}
 
 
 /* ==================================================
@@ -477,6 +418,21 @@ CHAKRA.map = function(){
 	}
 }
 
+
+/* ==================================================
+   PageHeight
+================================================== */
+
+CHAKRA.pageHeight = function() {
+    if ($('.stretch').length > 0)
+	{
+		$('.stretch').each(
+			function(index,element){$('.element').css({'height':($(window).height())+'px'});
+    	)};
+    }
+}
+
+
 /* ==================================================
 	Init
 ================================================== */
@@ -518,14 +474,13 @@ $(document).ready(function(){
 	CHAKRA.goUp();
 	CHAKRA.filter();
 	CHAKRA.fancyBox();
-	CHAKRA.contactForm();
-	CHAKRA.tweetFeed();
 	CHAKRA.scrollToTop();
 	CHAKRA.utils();
 	CHAKRA.accordion();
 	CHAKRA.toggle();
 	CHAKRA.toolTip();
 	CHAKRA.map();
+	CHAKRA.pageHeight();
 });
 
 $(window).resize(function(){

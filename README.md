@@ -1,3 +1,3 @@
-# Allan Shope Architect
+# Window Pods
 
-Company website.
+Website for a product design startup running App Engine

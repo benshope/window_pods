@@ -1,12 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-/*!
- * Beaker - Responsive Creative Flat Landing Pages - v2
- * Author URL: http://Themefeather.com
- * All Right Reserved.
- * Recommendation: It is recommended to edit the styles using LESS.
- */
-/* Global
-/ -------------------------------------------------- */
+
 body {
   font-family: "Lato";
   font-size: 15px;
@@ -63,51 +56,53 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar
 -------------------------------------------------- */
-/* logo  */
 
 .navbar {
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   transition: all .2s linear;
   color: black;
-  padding: 30px 0px 12px 0px; 
+  padding: 20px 0px 22px 0px; 
   position:fixed !important; 
-  /*border-bottom: 2px solid #db522f;*/
-  /*border-bottom: 2px solid rgba(0, 0, 0, 0.2); */
   border-bottom:none;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
 }
 
 .site-title {
-  /*margin-top: 6px;*/
-  /*color: #fff;*/
+  color: gray;
   font-weight: 300;
   font-size: 26px;
-  /*font-weight: 400;*/
   display: inline-block;
-  margin:5px 0 0px 0;
+  margin: 5px 0 0px 0;
   text-transform: uppercase;
 }
 .site-title img { 
-margin: -14px 8px -5px 0;
-padding:7px; 
-border-radius:8px;
-background: rgba(0, 0, 0, 0.2); 
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  margin: -14px 15px -5px 0;
+  padding:7px; 
+  border-radius:8px;
+  background: rgba(0, 0, 0, 0.2); 
+  /*border-radius: 50%;*/
+  background: #76cc1e;
 }
-.sticky .site-title img { background: rgba(0, 0, 0, 0.2);  }
+.site-title:hover img, .site-title:focus img { 
+  background: #6ab71b;
+}
+
 .user li a {
   font-size: 14px;
-  border: 2px solid #fff;
+  border: 2px solid #C0C0C0;
   display: inline-block;
-  /*color: #fff;*/
-  
+    
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   border-radius: 9px;
   text-align: center;
 }
 .user li a:hover, .user li a:focus {
-  background: #fff !important;
+  background: #f2f2f2 !important;
   color: rgb(219, 82, 47) !important;
 }
 
@@ -131,12 +126,12 @@ background: rgba(0, 0, 0, 0.2);
   color:black;
   /*border-bottom: 2px solid black; */
 }
-.sticky #topnav li:first-child { opacity: 1; }
-.sticky #topnav > li > a {   border: 2px solid rgba(0, 0, 0, 0.2); }
+/*.sticky #topnav li:first-child { opacity: 1; }*/
+/*.sticky #topnav > li > a {   border: 2px solid rgba(0, 0, 0, 0.2); }*/
 
 @media (max-width: 650px) {
     .header {
-    width: 260px;
+    width: 266px;
     margin-left: auto;
     margin-right: auto;
     }
@@ -477,10 +472,15 @@ ul.social li:nth-child(6):before {
 /* Footer
 / -------------------------------------------------- */
 .footer {
-  padding: 0px 0 !important;
+  background: #db522f;
+  background: white;
+  padding: 0px 0 8px 0 !important;
 }
 .footer .footer-title {
   font-size: 20px;
+  text-transform: uppercase;
+  font-weight:300;
+  color: white !important;
 }
 .footer .footer-title a:hover,
 .footer .footer-title a:focus {
@@ -490,11 +490,12 @@ ul.social li:nth-child(6):before {
   margin-top: 22px;
 }
 .footer img {
-margin-top:-7px;
+margin-top:-5px;
+margin-right: 7px;
 height:24px; 
 padding:4px;
-border-radius:2px;
-background: rgba(0, 0, 0, 0.6); 
+border-radius:3px;
+background: #76cc1e; 
 }
 /* Responsive fix
 / -------------------------------------------------- */
@@ -578,4 +579,11 @@ background: rgba(0, 0, 0, 0.6);
 .design {padding-top: 50px; padding-bottom:30px;}
 .design .row {padding-top: 30px; padding-bottom:30px; font-size: 22px; /*border-bottom:1px dashed gray;*/}
 /*.row > img {margin-top:-200px;}*/
+
+#contact button { 
+display: block;
+width: 100px;
+margin-left: auto;
+margin-right: auto;
+}
 

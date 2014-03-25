@@ -10,7 +10,9 @@ WEBSITE TODO
  - Add Copyright or TM Markers
 
 PROJECT TODO
+ - Add International Pledges
  - Communicate With Backers
+ - Add Stretch Goals?
  - Write Video Text
  - Record Video Voiceover
  - Switch Kickstarter to New Logo

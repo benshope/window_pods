@@ -13,10 +13,16 @@ PROJECT TODO
  - Scan/Layout Packaging In Illustrator
  - Add FAQ Items (Suction Cup, Pod Size)
  - Communicate With Backers
- - Add Stretch Goals?
+ - Add Stretch Goal?
  - Write Video Text
  - Record Video Voiceover
  - Switch Kickstarter to New Logo
  - Place Large Order of Pods (Sea Shipping?)
  - Sign Up for Retail Barcode
  - Print Retail Packaging
+
+PEOPLE TO GET BACK TO
+ - Earl Pardo (WillItLaunch)
+ - Gary Febus (TouchOfModern)
+ - Ryon Lane (Retail Advice)
+ - Robert Bridgman (Distribution in Europe)

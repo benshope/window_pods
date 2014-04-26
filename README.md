@@ -26,3 +26,6 @@ PEOPLE TO GET BACK TO
  - Gary Febus (TouchOfModern)
  - Ryon Lane (Retail Advice)
  - Robert Bridgman (Distribution in Europe)
+ - Increased Size Pledges - Theodore Warner, Csaba Toth, Hamza, Hsiaoen Wu | hsiaoen_wu@yahoo.co.uk, Virginia Choong, Paul Tan
+ - Late Pledges - Heather Carter | nasya@juno.com, Denise Royal | dmdroyal@yahoo.com
+ - Extra Seeds - Snagabax

@@ -10,22 +10,65 @@ WEBSITE TODO
  - Add Copyright or TM Markers
 
 PROJECT TODO
- - Scan/Layout Packaging In Illustrator
- - Add FAQ Items (Suction Cup, Pod Size)
- - Communicate With Backers
- - Add Stretch Goal?
- - Write Video Text
- - Record Video Voiceover
- - Switch Kickstarter to New Logo
- - Place Large Order of Pods (Sea Shipping?)
- - Sign Up for Retail Barcode
- - Print Retail Packaging
+ - Get Amazon Listing Up
 
 PEOPLE TO GET BACK TO
  - Earl Pardo (WillItLaunch)
  - Gary Febus (TouchOfModern)
  - Ryon Lane (Retail Advice)
  - Robert Bridgman (Distribution in Europe)
- - Increased Size Pledges - Theodore Warner, Csaba Toth, Hamza, Hsiaoen Wu | hsiaoen_wu@yahoo.co.uk, Virginia Choong, Paul Tan
- - Late Pledges - Heather Carter | nasya@juno.com, Denise Royal | dmdroyal@yahoo.com
- - Extra Seeds - Snagabax
+
+
+ DISTRIBUTORS:
+Alyse Franco, alyse.gifta@gmail.com Gifta.com
+Emily Whitters, emily@crowdcut.com
+
+ - INCREASED SIZE PLEDGES:
+ Theodore Warner,
+ Csaba Toth,
+ Hamza,
+ Hsiaoen Wu | hsiaoen_wu@yahoo.co.uk,
+ Virginia Choong,
+ Paul Tan |
+ Teresa McAdam, tmcadam@uwo.ca,
+ maryruthbarnett@gmail.com
+
+  - WANT TO ORDER
+Heather Carter | nasya@juno.com
+Denise Royal   | dmdroyal@yahoo.com
+Roxboily@hotmail.com
+Sam Hailey     | sam.hailey97@gmail.com
+Jon Croft
+Erin Fritzler
+maryruth barnett  maryruthbarnett@gmail.com
+Paul Tran
+Vimal Persaud
+Cammy BabyGrrl Milbourne Cozart
+Ksenia Tretiakova
+Pierre Kasner, Pierre.Kasner@googlemail.com
+Hsiaoen Wu
+alicatmacd@gmail.com
+bhupinders@me.com
+lisa.nguyen.gaulke@gmail.com
+smachopkins@gmail.com
+alma.valdez@yahoo.com
+katherine.whitson@gmail.com
+kalepine@gmail.com
+evin_kuyer@hotmail.com
+beanwallen@gmail.com
+Vivian Wong
+viv0731@yahoo.com
+
+ - Get Back To Soon - WANT TO ORDER
+Thomas Ungricht
+Donna Bailey
+McKenna Slone
+
+
+ - DELAY DOMESTIC SHIPPING:
+Larissa Solberg  3019802858  Delay shipping until 8/9
+
+ADDRESS CHANGES
+Tom S
+
+

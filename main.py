@@ -1,8 +1,4 @@
 import webapp2
-import os
-import json
-import cgi
-import urllib
 from google.appengine.api import mail
 
 class SendMail(webapp2.RequestHandler):

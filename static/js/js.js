@@ -6,7 +6,7 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'html/home.html'
+      templateUrl: 'html/home.html',
     })
     .state('contact', {
       url: '/contact',
@@ -16,7 +16,16 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 });
 
-app.controller('PageCtrl', function($scope) { });
+app.directive('scroll', function ($window) {
+    return function(scope, element, attrs) {
+        angular.element($window).bind('scroll', function() {
+            scope.header_opacity = $window.pageYOffset;
+            scope.$apply();
+        });
+    };
+});
+
+app.controller('Page', function($scope, $window) { });
 
 // app.controller('ContactCtrl', function($scope, $http) {
 //   $scope.submit = function() {

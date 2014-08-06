@@ -24,13 +24,16 @@
 }
 
 .navbar-default .navbar-nav>li>a {
+  transition: all .1s;
   color: white;
   padding-top: 21px;
   padding-bottom: 20px;
 }
+.navbar-nav>li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
 
 .amazon {
-  transition: all .1s;
   background-color: #FF9900;
 }
 .amazon-btn {
@@ -45,7 +48,7 @@
 }
 
 .amazon:hover {
-  background-color: orange;
+  background-color: orange !important;
 }
 .amazon-btn:hover {
   color: black;
@@ -62,7 +65,7 @@
 }
 
 @media (max-width: 750px) {
-.navbar-default { background: white !important; color: black !important; }
+.navbar-default { background: white !important; }
 
 }
 

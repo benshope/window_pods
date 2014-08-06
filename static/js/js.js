@@ -9,6 +9,22 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
       templateUrl: 'html/home.html',
       controller: 'Page'
     })
+    .state('tips', {
+      url: '/tips',
+      templateUrl: 'html/tips.html'
+    })
+    .state('faq', {
+      url: '/faq',
+      templateUrl: 'html/faq.html'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'html/about.html'
+    })
+    .state('blog', {
+      url: '/blog',
+      templateUrl: 'html/blog.html'
+    })
     .state('contact', {
       url: '/contact',
       templateUrl: 'html/contact.html'
@@ -31,7 +47,6 @@ $scope.status = {
     isFirstOpen: true,
     isFirstDisabled: false
   };
-
 });
 
 // app.controller('ContactCtrl', function($scope, $http) {

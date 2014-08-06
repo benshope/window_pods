@@ -12,15 +12,16 @@
 <body ng-controller='Page'>
 
 <div class="navbar navbar-default navbar-fixed-top" scroll style="background: rgba(255,255,255, {{scroll}});">
-  <div style="color: {{scroll > 0.5 ? 'black' : 'white' }};" class="navbar-header">
+  <div class="navbar-header">
     <button type="button" class="navbar-toggle" ng-init="nav_collapsed = true" ng-click="nav_collapsed = !nav_collapsed"><i class="fa fa-bars"></i></button>
-    <a ui-sref="home" class="navbar-brand title pull-left"><i class="fa fa-square-o"></i>&nbsp;&nbsp;Window Pods</a>
+    <a ui-sref="home" class="navbar-brand title pull-left" style="color: {{scroll > 0.5 ? 'black' : 'black' }};">
+      <i class="fa fa-circle main-text"></i>&nbsp;&nbsp;WINDOW PODS</a>
   </div>
   <div class="navbar-collapse collapse" ng-class="!nav_collapsed && 'in'">
     <ul class="nav navbar-nav navbar-right">
-      <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="home">HOME</a></li>
+      <li><a style="color: {{scroll > 0.5 ? 'black' : 'black' }};" ui-sref="home">HOME</a></li>
       <li class="dropdown">
-        <a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
+        <a style="color: {{scroll > 0.5 ? 'black' : 'black' }};" href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Instructions</a></li>
           <li><a href="#">FAQ</a></li>
@@ -29,7 +30,7 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </li>
-      <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="contact">CONTACT</a></li>
+      <li><a style="color: {{scroll > 0.5 ? 'black' : 'black' }};" ui-sref="contact">CONTACT</a></li>
       <li class="amazon"><a href="http://www.amazon.com/gp/product/B00JYYK9OA" style="margin-right: 30px;"><img id="amazon_top" src="/img/amazon.svg"/>&nbsp;&nbsp;ORDER NOW</a></li>
     </ul>
   </div>
@@ -50,16 +51,15 @@
 
      <div class="col-xs-4">
          <h4>ABOUT US</h4>
-      <p>Window Pods is a small company located in Mountain View, CA.  We work to create a meaningful, everyday connection between our consumers and the natural world.</p>
+      <p>Window Pods is a small company located dedicated to designing products that enable a meaningful, everyday connection to the natural world.</p>
       <br>
      </div>
 
      <div class="col-xs-4">
-         <h4>SUPPORT</h4>
+         <h4>CONTACT</h4>
          <p>Window Pods <br/>
             Mountain View, CA
          </p>
-         <p>+1 203 364 4420</p>
          <p>info@windowpods.org</p>
      </div>
   </div>

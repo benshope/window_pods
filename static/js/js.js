@@ -7,6 +7,7 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/',
       templateUrl: 'html/home.html',
+      controller: 'Page'
     })
     .state('contact', {
       url: '/contact',
@@ -19,13 +20,19 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 app.directive('scroll', function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind('scroll', function() {
-            scope.scroll = Math.min($window.pageYOffset/200, 1.0);
+            scope.scroll = Math.min($window.pageYOffset/100, 1.0);
             scope.$apply();
         });
     };
 });
 
-app.controller('Page', function($scope, $window) { });
+app.controller('Page', function($scope, $window) {
+$scope.status = {
+    isFirstOpen: true,
+    isFirstDisabled: false
+  };
+
+});
 
 // app.controller('ContactCtrl', function($scope, $http) {
 //   $scope.submit = function() {

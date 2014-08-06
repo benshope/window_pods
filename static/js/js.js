@@ -19,7 +19,7 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 app.directive('scroll', function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind('scroll', function() {
-            scope.header_opacity = $window.pageYOffset;
+            scope.scroll = Math.min($window.pageYOffset/200, 1.0);
             scope.$apply();
         });
     };

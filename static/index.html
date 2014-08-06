@@ -6,67 +6,39 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link href="css/css.css" rel="stylesheet">
 </head>
 <body ng-controller='Page'>
 
-<div class="navbar navbar-default navbar-fixed-top" scroll="true" style="background: rgba(120,200,255, {{header_opacity}});">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-      <span class="sr-only">Toggle Navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a ui-sref="home" class="navbar-brand title pull-left" id="headernavlink"><i class="logo fa fa-bolt"></i>&nbsp;&nbsp;Window Pods</a>
+<div class="navbar navbar-default navbar-fixed-top" scroll style="background: rgba(255,255,255, {{scroll}});">
+  <div style="color: {{scroll > 0.5 ? 'black' : 'white' }};" class="navbar-header">
+    <button type="button" class="navbar-toggle" ng-init="nav_collapsed = true" ng-click="nav_collapsed = !nav_collapsed"><i class="fa fa-bars"></i></button>
+    <a ui-sref="home" class="navbar-brand title pull-left"><i class="fa fa-square-o"></i>&nbsp;&nbsp;Window Pods</a>
   </div>
-  <div class="navbar-collapse collapse" ng-class="!navCollapsed && 'in'">
+  <div class="navbar-collapse collapse" ng-class="!nav_collapsed && 'in'">
     <ul class="nav navbar-nav navbar-right">
-      <li><a ui-sref="home">Home</a></li>
-      <li><a ui-sref="about">Page</a></li>
-      <li><a ui-sref="contact">Contact</a></li>
+      <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="home">HOME</a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li class="dropdown-header">Nav header</li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">One more separated link</a></li>
+          <li><a href="#">Instructions</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </li>
+      <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="contact">CONTACT</a></li>
+      <li class="amazon"><a href="http://www.amazon.com/gp/product/B00JYYK9OA" style="margin-right: 30px;"><img id="amazon_top" src="/img/amazon.svg"/>&nbsp;&nbsp;ORDER NOW</a></li>
     </ul>
   </div>
 </div>
 
-<!-- <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Window Pods</a>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle Navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse collapse navbar-right">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-
 <div ui-view></div>
 
 <div class="footer container-fluid">
-  <h6 class="title-small"><i class="icon-twitter"></i> FOLLOW ME ON TWITTER @BENSHOPE</h6>
+  <h6 class="title-small"><i class="icon-twitter"></i> FOLLOW US ON TWITTER & INSTAGRAM @WINDOWPODS</h6>
   <div class="row-fluid footerzone">
      <div class="col-xs-4">
          <h4>FROM THE BLOG</h4>
@@ -77,18 +49,18 @@
      </div>
 
      <div class="col-xs-4">
-         <h4>ABOUT MODUS</h4>
-      <p>Modus is a wonderful theme for everyone. No matter if you are a designer, photographer, freelancer or developer; this theme is a great way to show your work with style.</p>
+         <h4>ABOUT US</h4>
+      <p>Window Pods is a small company located in Mountain View, CA.  We work to create a meaningful, everyday connection between our consumers and the natural world.</p>
       <br>
      </div>
 
      <div class="col-xs-4">
-         <h4>OUR BUNKER</h4>
-         <p>Av. Sunderville, 987 <br/>
-            Madrid, Spain.
+         <h4>SUPPORT</h4>
+         <p>Window Pods <br/>
+            Mountain View, CA
          </p>
-         <p>+34 888094333</p>
-         <p>yourmail@domain.com</p>
+         <p>+1 203 364 4420</p>
+         <p>info@windowpods.org</p>
      </div>
   </div>
 </div>

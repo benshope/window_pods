@@ -12,12 +12,46 @@
 }
 
 /* ========== MY CHANGES ========== */
-
+#amazon_top { height:14px; }
 .row-fluid { clear: both; }
 .panel-group .panel { border-radius: 0px; }
 .navbar-default {
   background-color: rgba(0,0,0,0);
-  border-color: rgba(0,0,0,0);
+  border: none;
+  min-height: 60px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+
+.amazon {
+  transition:all .2s;
+  background-color: #FF9900;
+}
+.amazon-btn {
+  border-radius: 8px;
+  transition:all .2s;
+  border: 2px solid #FF9900;
+  font-size: 20px;
+  padding: 20px 35px;
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.3);
+
+}
+
+.amazon:hover { background-color: orange; }
+.amazon-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* ========== BASIC ELEMENTS ========== */
@@ -59,28 +93,23 @@ a:hover {
 
 .navbar-brand {
   color: white !important;
-  font-weight: 600;
+  font-weight: 100;
   padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
-  *zoom: 1;
 }
 
 .accordion-group {
   margin-right: 20px;
-  margin-bottom: 1px;
   border: none;
   -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
           border-radius: 0px;
-}
-
-.accordion-heading {
-  background:#transparent;
-  border-bottom: 1px solid #555555;
 }
 
 .accordion-heading a {
@@ -90,13 +119,12 @@ a:hover {
   letter-spacing: 2px;
 }
 
-.accordion-heading li_ {
+.accordion-heading li {
   font-size: 16px;
   margin-right:12px;
 }
 
 .accordion-inner {
-  padding: 9px 15px;
   border-top: 0px solid #555555;
   font-size: 12px;
   letter-spacing: 1px;
@@ -241,6 +269,7 @@ h6.title-footer {
   right: 60px;
 }
 
+.bold { font-weight: 500; }
 
 /* ========== WRAP SECTIONS ========== */
 
@@ -252,24 +281,25 @@ h6.title-footer {
   -webkit-background-size:cover;
   -moz-background-size:cover;
   background-size:cover;
-  height: 525px;
+  height: 725px;
 }
 
 #headerwrap h1 {
   color:#ffffff;
   margin-top: 140px;
-  padding-bottom: 30px;
+  font-weight: 100;
   letter-spacing: 8px;
 }
 
 #headerwrap p {
   color:#ffffff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
   line-height: 40px;
   letter-spacing: 3px;
   margin-left: 15px;
+  margin-bottom: 42px;
 }
 
 #aboutwrap {
@@ -610,7 +640,7 @@ h6.title-footer {
 .blog-post blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
-  border-left: 4px solid #28a0ff;
+  border-left: 4px solid #8AC007;
   color: #a7a7a7;
   font-size: 19px;
 }
@@ -905,68 +935,68 @@ h6.title-footer {
 /* COLOR CONFIGURATION */
 
 .accordion-heading a {
-  color:#28a0ff;
+  color:#8AC007;
 }
 
 .accordion-heading a:hover {
-  color: #28a0ff;
+  color: #8AC007;
 }
 
 blockquote {
-  border-left: 6px solid #28a0ff;
+  border-left: 6px solid #8AC007;
 }
 
 .modus_color_transition:hover {
-  color           : #28a0ff;
+  color           : #8AC007;
   text-decoration : none;
 }
 
 h5.title-small, h6.title-small {
-  background:#28a0ff;
+  background:#8AC007;
 }
 
 .grid figcaption {
-  background: #28a0ff;
+  background: #8AC007;
 }
 
 .whitezone a {
-  color:#28a0ff;
+  color:#8AC007;
 }
 
 .whitezone li_ {
-  color: #28a0ff;
+  color: #8AC007;
 }
 
 .aboutzone {
-  border-top: #28a0ff thick solid;
+  border-top: #8AC007 thick solid;
 }
 
 .blog-date h6 {
-  color: #28a0ff;
+  color: #8AC007;
 }
 
 .blog-post a {
-  color: #28a0ff;
+  color: #8AC007;
 }
 
 .blog-post i {
-  color: #28a0ff;
+  color: #8AC007;
 }
 
 .popular-posts li em {
-  color:#28a0ff;
+  color:#8AC007;
 }
 
 .button-b a {
-  background-color:#28a0ff;
+  background-color:#8AC007;
 }
 
 .cbp-qtprogress {
-  background: #28a0ff;
+  background: #8AC007;
 }
 
 .bar {
-  background: #28a0ff !important;
+  background: #8AC007 !important;
 }
 
 

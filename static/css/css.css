@@ -69,6 +69,20 @@
 
 }
 
+input, textarea, .send-button {
+height: 46px;
+padding: 10px 16px;
+font-size: 18px;
+line-height: 1.33;
+width: 100%;
+border: 0;
+border-bottom: 2px solid #cacaca;
+}
+
+.send-button { color: white; background: #8AC007; text-align: left; border: none;}
+
+textarea { height: auto; border: none;}
+
 /* ========== BASIC ELEMENTS ========== */
 
 body {
@@ -78,7 +92,8 @@ body {
   font-size: 11px; font-size: 1.1rem;
   font-weight: 400;
   line-height: 22px;
-  margin-top: 30px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {

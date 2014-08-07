@@ -9,10 +9,6 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
       templateUrl: 'html/home.html',
       controller: 'Page'
     })
-    .state('tips', {
-      url: '/tips',
-      templateUrl: 'html/tips.html'
-    })
     .state('faq', {
       url: '/faq',
       templateUrl: 'html/faq.html'

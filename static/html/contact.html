@@ -3,70 +3,63 @@
     <div id="contactwrap">
     <header class="clearfix">
         <div class="container">
-          <h1>AV. <b>SUNDERVILLE</b></h1>
+<!--           <h1>AV. <b>SUNDERVILLE</b></h1>
           <h1>POSTAL <b>987</b></h1>
-          <h1>MADRID, <b>SPAIN</b></h1>
+          <h1>MADRID, <b>SPAIN</b></h1> -->
         </div>
       </header>
     </div>
 
     <div class="container-fluid">
-      <div class="row-fluid">
+      <div class="row">
         <div class="col-sm-4 blackzone">
           <h4>SUPPORT <i class="icon-chevron-down"></i></h4>
            <p>Window Pods <br/>
+            600 North Whisman Road #6 <br/>
             Mountain View, CA 94043
            </p>
            <p>info@windowpods.org</p>
-        </div><!-- /col-sm-4 -->
+        </div>
+
+                <div class="col-sm-8">
+          <form id="contact-form" role="form" ng-submit="submit()">
+            <input type="text" ng-model="contact_name" name="name" placeholder="NAME" required>
+            <input type="email" ng-model="contact_email" name="email" placeholder="EMAIL" required>
+            <textarea ng-model="contact_message" name="message" placeholder="MESSAGE" rows="5" required></textarea>
+            <button type="submit" class="send-button">SEND</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 greyzone">
+          <h4>CONTACT US</h4>
+          <p>We always love to hear the ideas, experiences, and questions of Window Pods owners. Get in touch with us - your comments, critiques, and ideas help us build the best possible indoor gardening experience.</p>
+          <br>
+        </div>
+
 
         <div class="col-sm-4 whitezone">
           <h4>JOBS & INTERNSHIPS</h4>
           <p>We are always searching for talented individuals. If you want to work with us, just drop us an email.</p>
           <p><a href="#">jobs@windowpods.org</a></p>
-        </div><!-- /col-sm-4 -->
+        </div>
 
         <div class="col-sm-4 whitezone">
           <h4>DISTRIBUTORS</h4>
           <p>If you are looking to distribute Window Pods or purchase in bulk, get in touch with us.</p>
         <p><a href="#">sales@windowpods.org</a></p>
-        </div><!-- /col-sm-4 -->
-      </div><!-- /row-fluid -->
+        </div>
 
-
-      <!-- === WHAT WE DO SECTION === -->
-      <div class="row-fluid">
-        <div class="col-sm-4 greyzone">
-          <h4>CONTACT US</h4>
-          <p>We always love to hear the ideas, experiences, and questions of Window Pods owners. Get in touch with us - your thoughts and feedback help us build the best possible indoor gardening experience.</p>
-          <br>
-        </div><!-- /col-sm-4 -->
-
-        <div class="col-sm-4 whitezone">
-          <h4>WE ARE SOCIAL</h4>
-          <p>
-            <i class="icon-twitter"></i> @ModusTheme <br/>
-            <i class="icon-instagram"></i> Modus Theme <br/>
-            <i class="icon-linkedin"></i> Modus Theme Team <br/>
-            <i class="icon-apple"></i> Modus <br/>
-          </p>
-        </div><!-- /col-sm-4 -->
-
-        <div class="col-sm-4 map">
-          <p><iframe width="100%" height="230px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=37.735377,86.572266&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-          </p>
-        </div><!-- /col-sm-4 -->
-      </div><!-- /row-fluid -->
-    </div> <!-- /container-fluid -->
-
-
+      </div>
+    </div>
 
 <!-- <section id="contact" class="contact">
   <div id="map" class="google-map" map-directive="" latitude="43.074688" longitude="-89.384294"></div>
 
   <div class="contact-form">
     <div class="container-fluid contact-form-inner">
-      <div class="row-fluid">
+      <div class="row">
         <form id="contact-form" class="contact-form" role="form" ng-submit="submit()">
             <input type="text" ng-model="contact_name" class="form-control input-lg" name="name" placeholder="Name" required>
             <input type="email" ng-model="contact_email" class="form-control input-lg" name="email" placeholder="Email" required>

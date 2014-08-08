@@ -1,9 +1,15 @@
 import webapp2
+import json
 from google.appengine.api import mail
 
 class SendMail(webapp2.RequestHandler):
     def post(self):
-        mail.send_mail(sender="Ben Shope <nimajnebs@gmail.com>", to="Ben Shope <nimajnebs@gmail.com>", subject="WindowPods Contact Form Message", body="From: {0} | {1} \nMessage: {2}".format(self.request.get('name'), self.request.get('email'), self.request.get('message')))
+        json_data = json.loads(self.request.body)
+        data = [json_data.get(x) for x in ['name', 'email', 'message']]
+        mail.send_mail(sender='nimajnebs@gmail.com',
+            to='nimajnebs@gmail.com',
+            subject='Window Pods',
+            body='{}\n{}\n{}'.format(*data))
         self.response.out.write('Thanks!  Your message has been sent.')
 
 app = webapp2.WSGIApplication([

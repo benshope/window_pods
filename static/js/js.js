@@ -32,7 +32,8 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: 'html/contact.html'
+      templateUrl: 'html/contact.html',
+      controller: 'Contact'
     });
 
   $urlRouterProvider.otherwise('/');
@@ -54,17 +55,19 @@ $scope.status = {
   };
 });
 
-
-
-// app.controller('ContactCtrl', function($scope, $http) {
-//   $scope.submit = function() {
-//     $http.post('/email',
-//       {name: $scope.contact_name,
-//       email: $scope.contact_email,
-//       message: $scope.contact_message});
-//     $scope.contact_sent = true;
-//   };
-// });
+app.controller('Contact', function($scope, $http) {
+  $scope.submit = function() {
+    $http.post('/mail', {
+      name: $scope.contact_name,
+      email: $scope.contact_email,
+      message: $scope.contact_message
+    });
+    $scope.contact_name = '';
+    $scope.contact_email = '';
+    $scope.contact_message = '';
+    $scope.contact_sent = true;
+  };
+});
 
 // app.directive('mapDirective', function() {
 //   return function (scope, elem, attrs) {

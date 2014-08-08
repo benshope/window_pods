@@ -3,8 +3,8 @@
     <div id="contactwrap">
     <header class="clearfix">
         <div class="container">
-<!--           <h1>AV. <b>SUNDERVILLE</b></h1>
-          <h1>POSTAL <b>987</b></h1>
+          <!-- <h1><b>CONTACT</b></h1> -->
+<!--           <h1>POSTAL <b>987</b></h1>
           <h1>MADRID, <b>SPAIN</b></h1> -->
         </div>
       </header>
@@ -22,7 +22,7 @@
             <input type="text" ng-model="contact_name" name="name" placeholder="NAME" required>
             <input type="email" ng-model="contact_email" name="email" placeholder="EMAIL" required>
             <textarea ng-model="contact_message" name="message" placeholder="MESSAGE" rows="5" required></textarea>
-            <button type="submit" class="send-button">SEND</button>
+            <button type="submit" class="send-button">{{!contact_sent ? 'SEND' : 'MESSAGE SENT, THANKS!'}}</button>
           </form>
         </div>
       </div>
@@ -52,24 +52,3 @@
 
       </div>
     </div>
-
-<!-- <section id="contact" class="contact">
-  <div id="map" class="google-map" map-directive="" latitude="43.074688" longitude="-89.384294"></div>
-
-  <div class="contact-form">
-    <div class="container-fluid contact-form-inner">
-      <div class="row">
-        <form id="contact-form" class="contact-form" role="form" ng-submit="submit()">
-            <input type="text" ng-model="contact_name" class="form-control input-lg" name="name" placeholder="Name" required>
-            <input type="email" ng-model="contact_email" class="form-control input-lg" name="email" placeholder="Email" required>
-            <textarea ng-model="contact_message" class="form-control input-lg" name="message" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class="btn btn-custom btn-success btn-block btn-lg">Send</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-</section> -->
-
-
-

@@ -11,20 +11,27 @@
   font-style: normal;
 }
 
-
-
 /* ========== MY CHANGES ========== */
 
 .main-text { color: #8AC007; }
 #amazon_top { height:14px; }
 .row-fluid { clear: both; }
 
+.panel { box-shadow: none; }
 .panel-heading { padding: 0px; }
-.panel-group .panel { border-radius: 0px; }
+.panel-group .panel { border-radius: 0px; border: 0px; }
 .navbar-default {
   background-color: rgba(0,0,0,0);
   border: none;
   min-height: 60px;
+}
+.panel-default > .panel-heading {
+  background: white;
+  border: none;
+}
+.panel-body {
+  padding: 10px 30px ;
+  font-size: 13px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -1016,6 +1023,7 @@ blockquote {
 
 h5.title-small, h6.title-small {
   background:#8AC007;
+  /*background:#37383a;*/
 }
 
 .grid figcaption {

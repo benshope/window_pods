@@ -20,15 +20,15 @@
   <div class="navbar-collapse collapse" ng-class="!nav_collapsed && 'in'">
     <ul class="nav navbar-nav navbar-right">
       <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="home">HOME</a></li>
-      <li class="dropdown">
+      <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="faq">FAQ / LEARN</a></li>
+<!--       <li class="dropdown">
         <a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="/tips">Instructions</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/blog">About Us</a></li>
+          <li><a href="/faq">FAQ / Learn</a></li>
+          <li><a href="/about">About Us</a></li>
           <li><a href="/blog">Blog</a></li>
         </ul>
-      </li>
+      </li> -->
       <li><a style="color: {{scroll > 0.5 ? 'black' : 'white' }};" ui-sref="contact">CONTACT</a></li>
       <li class="amazon"><a href="http://www.amazon.com/gp/product/B00JYYK9OA" style="margin-right: 30px;"><img id="amazon_top" src="/img/amazon.svg"/>&nbsp;&nbsp;ORDER NOW</a></li>
     </ul>
@@ -40,27 +40,25 @@
 <div class="footer container-fluid">
   <h6 class="title-small"><i class="icon-twitter"></i> FOLLOW US ON TWITTER & INSTAGRAM @WINDOWPODS</h6>
   <div class="row-fluid footerzone">
-     <div class="col-xs-4">
+     <div class="col-sm-4">
          <h4>LINKS</h4>
-         <p><a href="https://www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a></p>
-         <p><a href="https://www.touchofmodern.com/sales/windowpods/window-pods-indoor-garden-set-of-3">Touch of Modern</a></p>
-         <p><a href="http://www.amazon.com/gp/product/B00JYYK9OA">Amazon</a></p>
+         <p><a href="https://www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a>, <a href="https://www.touchofmodern.com/sales/windowpods/window-pods-indoor-garden-set-of-3">Touch of Modern</a>, <a href="http://www.amazon.com/gp/product/B00JYYK9OA">Amazon</a>, <a href="https://github.com/benshope/Window-Pods">GitHub</a>, <a href="http://benshope.com">Ben Shope</a></p>
          <br>
      </div>
 
-     <div class="col-xs-4">
+     <div class="col-sm-4">
          <h4>ABOUT US</h4>
       <p>Window Pods is a small company located in Mountain View, CA. We are dedicated to designing products that enable a meaningful, everyday connection to the natural world.</p>
       <br>
      </div>
 
-     <div class="col-xs-4">
+     <div class="col-sm-4">
          <h4>CONTACT</h4>
          <p>Window Pods <br/>
             600 North Whisman Road #6 <br/>
             Mountain View, CA
          </p>
-         <p>info@windowpods.org</p>
+         <p><a href="mailto:info@windowpods.org?Subject=Window%20Pods">info@windowpods.org</a></p>
      </div>
   </div>
 </div>
@@ -82,5 +80,14 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
 <script src="js/js.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17852816-16', 'windowpods.org');
+    // ga('send', 'pageview');
+  </script>
 </body>
 </html>

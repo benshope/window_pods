@@ -46,29 +46,24 @@
   color: black !important;
 }
 
-.amazon {        background: #FF9900; }
-.amazon:hover {  background: #ffae00 !important; }
-.amazon:active { background: orange !important; }
+.amazon-top {        
+  padding-right: 30px;
+  background: #FF9900; }
+.amazon-top:hover {  background: #ffae00 !important; }
+.amazon-top:active { background: orange !important; }
 
 .amazon-btn {
+  /*transition: all .1s;*/
   color: black;
   border-radius: 8px;
-  transition: all .1s;
   border: 2px solid #FF9900;
   font-size: 20px;
   padding: 20px 35px;
   margin-top: 60px;
-  background: rgba(255, 255, 255, 1);
-
+  background: white;
 }
-
-.amazon-btn:hover {
-  color: black;
-  background: #f2f2f2;
-}
-.amazon-btn:active {
-  background: rgba(255, 255, 255, .5);
-}
+.amazon-btn:hover {  color: black; background: #f2f2f2; }
+.amazon-btn:active { color: black; background: #c0c0c0; }
 
 .dropdown-menu {
   border: none;
@@ -109,6 +104,7 @@ button:focus { outline: none; }
 
 /* ========== BASIC ELEMENTS ========== */
 
+body, html { width: 100%; overflow-x: hidden; }
 body {
   background: #ffffff;
   color: #2f2f2f;
@@ -118,7 +114,6 @@ body {
   line-height: 22px;
   margin: 0px;
   padding: 0px;
-  overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -178,6 +173,7 @@ font-weight: 400;
 }
 
 .accordion-heading a {
+  border-bottom: 1px solid gray;
   font-size:13px;
   font-weight:400;
   font-family: 'Raleway', sans-serif;
@@ -189,6 +185,7 @@ font-weight: 400;
   text-align: left;
 }
 .accordion-heading a:hover {
+  border-bottom: 1px solid darkgray;
   background: #f2f2f2;
 }
 .accordion-heading li {

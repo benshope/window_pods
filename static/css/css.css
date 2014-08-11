@@ -41,7 +41,9 @@
   padding-bottom: 20px;
 }
 .navbar-nav>li:hover {
-  background: rgba(0, 0, 0, 0.1);
+  /*background: rgba(0, 0, 0, 0.1);*/
+  background: #f2f2f2;
+  color: black !important;
 }
 
 .amazon {        background: #FF9900; }
@@ -56,16 +58,16 @@
   font-size: 20px;
   padding: 20px 35px;
   margin-top: 60px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 1);
 
 }
 
 .amazon-btn:hover {
   color: black;
-  background: white;
+  background: #f2f2f2;
 }
 .amazon-btn:active {
-  background: #f2f2f2;
+  background: rgba(255, 255, 255, .5);
 }
 
 .dropdown-menu {

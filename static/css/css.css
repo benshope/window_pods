@@ -12,7 +12,7 @@
 }
 
 /* ========== MY CHANGES ========== */
-
+p {display: block;}
 .main-text { color: #8AC007; }
 #amazon_top { height:14px; }
 .row-fluid { clear: both; }
@@ -32,6 +32,11 @@
 .panel-body {
   padding: 10px 30px ;
   font-size: 13px;
+  border: none !important;
+}
+.panel {
+  margin-top: 0px !important;
+  padding-left: 5px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -59,11 +64,11 @@
   border: 2px solid #FF9900;
   font-size: 20px;
   padding: 20px 35px;
-  margin-top: 60px;
+  margin-top: 100px;
   background: white;
 }
 .amazon-btn:hover {  color: black; background: #f2f2f2; }
-.amazon-btn:active { color: black; background: #c0c0c0; }
+.amazon-btn:active { color: black; background: rgba(255, 255, 255, 0.5); }
 
 .dropdown-menu {
   border: none;
@@ -72,8 +77,12 @@
 }
 
 @media (max-width: 750px) {
-.navbar-default { background: white !important; }
-
+  .navbar-default { background: white !important; }
+  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: black !important;
+  }
+  #headerwrap h1 {margin-bottom: 60px;   margin-top: 100px;}
+  #headerwrap p { display: none; }
 }
 
 input, textarea, .send-button {
@@ -101,6 +110,14 @@ input:focus, textarea:focus {
 
 button:focus { outline: none; }
 .send-button:active {background: #7cad06;}
+
+#faqheader {
+  background: url(../img/sliders/flex03.jpg) no-repeat center top;
+  padding-top:120px;
+  background-size:cover;
+  height: 300px;
+  color: white;
+}
 
 /* ========== BASIC ELEMENTS ========== */
 
@@ -181,7 +198,7 @@ font-weight: 400;
   width: 100%;
   margin: 0px;
   display:block;
-  padding: 10px 15px;
+  padding: 12px 15px 11px 15px;
   text-align: left;
 }
 .accordion-heading a:hover {
@@ -211,6 +228,12 @@ font-weight: 400;
 
 /* ========== TITLES / Footer ========== */
 
+.title-small a {
+  display: block; 
+  width: 100%;
+  padding: 10px 0px;
+}
+
 h3.title-bg, h4.title-bg {
   background:#2f2f2f;
   padding-top:10px;
@@ -224,8 +247,6 @@ h3.title-bg, h4.title-bg {
 }
 
 h5.title-small, h6.title-small {
-  padding-top:10px;
-  padding-bottom: 10px;
   padding-left: 30px;
   margin-top:0px;
   margin-bottom: 0px;
@@ -341,21 +362,18 @@ h6.title-footer {
 .bold { font-weight: 500; }
 
 /* ========== WRAP SECTIONS ========== */
+.grid-image {background: url(../img/header_bg.jpg) no-repeat center top; min-height: 320px; background-size: cover;}
 
 #headerwrap {
   background: url(../img/header_bg.jpg) no-repeat center top;
-  margin-top: -120px;
-  padding-top:160px;
   text-align:center;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
   background-size:cover;
-  height: 725px;
+  height: 500px;
 }
 
 #headerwrap h1 {
   color:#ffffff;
-  margin-top: 140px;
+  margin-top: 160px;
   font-weight: 100;
   letter-spacing: 8px;
 }
@@ -367,8 +385,8 @@ h6.title-footer {
   text-align: center;
   line-height: 40px;
   letter-spacing: 3px;
+  margin-bottom: 55px;
   margin-left: 15px;
-  margin-bottom: 42px;
 }
 
 #aboutwrap {
@@ -486,7 +504,7 @@ h6.title-footer {
 .greyzone {
   background-color: #f2f2f2;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .greyzone h4 {
@@ -541,6 +559,7 @@ h6.title-footer {
 
 .whitezone {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .whitezone h4 {
@@ -564,7 +583,6 @@ h6.title-footer {
   font-weight: 600;
   margin-top: -20px;
 }
-
 
 .whitezone p {
   text-align: left;
@@ -993,16 +1011,7 @@ h6.title-footer {
   text-align: center
 }
 
-/* Portfolio Description Tweak */
-
-.desc {
-  display: inherit;
-}
-
-
-
 /* COLOR CONFIGURATION */
-
 .accordion-heading a {
   color:#8AC007;
 }

@@ -12,6 +12,7 @@
 <body ng-controller='Page'>
 
 <div class="navbar navbar-default navbar-fixed-top" scroll style="background: rgba(255,255,255, {{scroll}});">
+  <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" ng-init="nav_collapsed = true" ng-click="nav_collapsed = !nav_collapsed"><i class="fa fa-bars"></i></button>
     <a ui-sref="home" class="navbar-brand title pull-left" style="color: {{scroll > 0.5 ? 'black' : 'white' }};">
@@ -33,33 +34,39 @@
       <li class="amazon-top"><a href="http://www.amazon.com/gp/product/B00JYYK9OA"><img id="amazon_top" src="/img/amazon.svg"/>&nbsp;&nbsp;ORDER NOW</a></li>
     </ul>
   </div>
+  </div>
 </div>
 
 <div ui-view autoscroll="true"></div>
+<h6 class="title-small">
+<div class="container">
+  <a href="https://www.facebook.com/pages/Window-Pods/617900358329739" target="_blank"><i class="fa fa-facebook"></i>&nbsp; LIKE US ON FACEBOOK!</a>
+</div>
+</h6>
+<div class="footer">
+  <div class="container">
+    <div class="row footerzone">
+       <div class="col-sm-4">
+           <h4>LINKS</h4>
+           <p><a href="https://www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a>, <a href="https://www.touchofmodern.com/sales/windowpods/window-pods-indoor-garden-set-of-3">Touch of Modern</a>, <a href="http://www.amazon.com/gp/product/B00JYYK9OA">Amazon</a>, <a href="https://github.com/benshope/Window-Pods">GitHub</a>, <a href="http://benshope.com">Founder's Website</a>, <a href="https://www.facebook.com/pages/Window-Pods/617900358329739">Facebook</a>, <a href="http://www.pinterest.com/search/pins/?q=window%20pods">Pinterest</a></p>
+           <br>
+       </div>
 
-<div class="footer container-fluid">
-  <h6 class="title-small"><a href="https://www.facebook.com/pages/Window-Pods/617900358329739" target="_blank"><i class="fa fa-facebook"></i>&nbsp; LIKE US ON FACEBOOK!</a></h6>
-  <div class="row footerzone">
-     <div class="col-sm-4">
-         <h4>LINKS</h4>
-         <p><a href="https://www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a>, <a href="https://www.touchofmodern.com/sales/windowpods/window-pods-indoor-garden-set-of-3">Touch of Modern</a>, <a href="http://www.amazon.com/gp/product/B00JYYK9OA">Amazon</a>, <a href="https://github.com/benshope/Window-Pods">GitHub</a>, <a href="http://benshope.com">Founder's Website</a>, <a href="https://www.facebook.com/pages/Window-Pods/617900358329739">Facebook</a>, <a href="http://www.pinterest.com/search/pins/?q=window%20pods">Pinterest</a></p>
-         <br>
-     </div>
+       <div class="col-sm-4">
+           <h4>ABOUT US</h4>
+        <p>Window Pods is a small company located in Mountain View, CA. We are dedicated to designing products that enable a meaningful, everyday connection to the natural world.</p>
+        <br>
+       </div>
 
-     <div class="col-sm-4">
-         <h4>ABOUT US</h4>
-      <p>Window Pods is a small company located in Mountain View, CA. We are dedicated to designing products that enable a meaningful, everyday connection to the natural world.</p>
-      <br>
-     </div>
-
-     <div class="col-sm-4">
-         <h4>CONTACT</h4>
-         <p>Window Pods <br/>
-            600 North Whisman Road #6 <br/>
-            Mountain View, CA
-         </p>
-         <p><a href="mailto:info@windowpods.org?Subject=Window%20Pods">info@windowpods.org</a></p>
-     </div>
+       <div class="col-sm-4">
+           <h4>CONTACT</h4>
+           <p>Window Pods <br/>
+              600 North Whisman Road #6 <br/>
+              Mountain View, CA
+           </p>
+           <p><a href="mailto:info@windowpods.org?Subject=Window%20Pods">info@windowpods.org</a></p>
+       </div>
+    </div>
   </div>
 </div>
 

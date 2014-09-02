@@ -11,52 +11,46 @@
   font-style: normal;
 }
 
-/* ========== MY CHANGES ========== */
-p {display: block;}
-.main-text { color: #8AC007; }
-#amazon_top { height:14px; }
-.row-fluid { clear: both; }
+/* ========== NAVBAR ========== */
 
-.panel { box-shadow: none; }
-.panel-heading { padding: 0px; }
-.panel-group .panel { border-radius: 0px; border: 0px; }
 .navbar-default {
   background-color: rgba(0,0,0,0);
   border: none;
   min-height: 60px;
 }
-.panel-default > .panel-heading {
-  background: white;
-  border: none;
-}
-.panel-body {
-  padding: 10px 30px ;
-  font-size: 13px;
-  border: none !important;
-}
-.panel {
-  margin-top: 0px !important;
-  padding-left: 5px;
-}
 
 .navbar-default .navbar-nav>li>a {
-  transition: all .1s;
-  color: white;
+  /*transition: all .1s;*/
   padding-top: 21px;
   padding-bottom: 20px;
 }
 .navbar-nav>li:hover {
-  /*background: rgba(0, 0, 0, 0.1);*/
+  background: #f2f2f2;
+}
+.navbar-nav>li:hover a {
   background: #f2f2f2;
   color: black !important;
 }
 
-.amazon-top {        
+@media (max-width: 750px) {
+  .navbar-default { background: white !important; }
+  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: black !important;
+  }
+  #headerwrap h1 {margin-bottom: 60px;   margin-top: 100px;}
+  #headerwrap p { display: none; }
+}
+
+#amazon_top { height:14px; }
+.amazon-top {
   padding-right: 30px;
   background: #FF9900; }
+.amazon-top:hover a, .amazon-top a {color: white !important;}
 .amazon-top:hover {  background: #ffae00 !important; }
 .amazon-top:active { background: orange !important; }
 
+
+/* ========== HOME ========== */
 .amazon-btn {
   /*transition: all .1s;*/
   color: black;
@@ -76,15 +70,30 @@ p {display: block;}
   box-shadow: none;
 }
 
-@media (max-width: 750px) {
-  .navbar-default { background: white !important; }
-  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: black !important;
-  }
-  #headerwrap h1 {margin-bottom: 60px;   margin-top: 100px;}
-  #headerwrap p { display: none; }
+
+p {display: block;}
+.main-text { color: #8AC007; }
+.row-fluid { clear: both; }
+
+.panel { box-shadow: none; }
+.panel-heading { padding: 0px; }
+.panel-group .panel { border-radius: 0px; border: 0px; }
+
+.panel-default > .panel-heading {
+  background: white;
+  border: none;
+}
+.panel-body {
+  padding: 10px 30px ;
+  font-size: 13px;
+  border: none !important;
+}
+.panel {
+  margin-top: 0px !important;
+  padding-left: 5px;
 }
 
+/* ========== CONTACT ========== */
 input, textarea, .send-button {
 background: #f2f2f2;
 height: 46px;
@@ -94,6 +103,7 @@ line-height: 1.33;
 width: 100%;
 border: 0;
 border-bottom: 2px solid #cacaca;
+border-radius: 0px;
 }
 
 .send-button { color: white; background: #8AC007; text-align: left; border: none;}
@@ -229,7 +239,7 @@ font-weight: 400;
 /* ========== TITLES / Footer ========== */
 
 .title-small a {
-  display: block; 
+  display: block;
   width: 100%;
   padding: 10px 0px;
 }

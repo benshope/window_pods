@@ -35,6 +35,8 @@ a {
   color: #F1F1F1;
   text-decoration: none;
 }
+.bg_white {background: white;}
+.bg_gray {background: #f2f2f2;}
 a:hover {
   color: #F5F5F5;
   text-decoration: none;
@@ -55,8 +57,7 @@ a:hover {
   padding-bottom: 20px;
   color: white;
 }
-.navbar-nav li:hover, .navbar-nav li:hover a { background: #f2f2f2; color: black; }
-
+.navbar-nav li:hover, .navbar-nav li:hover a { background: #f2f2f2; color: white; }
 #amazon_top {
   padding-right: 30px;
   background: #FF9900; }
@@ -64,10 +65,8 @@ a:hover {
 #amazon_top:hover {  background: #ffae00; }
 #amazon_top:active { background: orange; }
 #amazon_top_img { height: 14px; }
-
-#navbar .navbar-collapse li a { color: black; }
-
 @media (max-width: 750px) {
+  #navbar .navbar-collapse li a { color: black; }
   .navbar-brand {color:black !important;}
   .navbar-default { background: white !important; }
   .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -127,7 +126,6 @@ font-weight: 400;
 }
 
 .accordion-heading a {
-  border-bottom: 1px solid gray;
   font-size:13px;
   font-weight:400;
   font-family: 'Raleway', sans-serif;
@@ -139,7 +137,6 @@ font-weight: 400;
   text-align: left;
 }
 .accordion-heading a:hover {
-  border-bottom: 1px solid darkgray;
   background: #f2f2f2;
 }
 .accordion-heading li {
